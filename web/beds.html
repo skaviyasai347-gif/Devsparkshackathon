@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureLink - Bed Availability</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="home-page">
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>CURELINK 🩺</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="home.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+            <li><a href="disease.html"><i class='bx bx-plus-medical'></i> Disease</a></li>
+            <li><a href="vaccines.html"><i class='bx bxs-virus'></i> Vaccines</a></li>
+            <li><a href="upload.html"><i class='bx bx-upload'></i> Upload</a></li>
+            <li><a href="beds.html"><i class='bx bxs-bed'></i> Bed Availability</a></li>
+            <li><a href="assistant.html"><i class='bx bxs-bot'></i> Personal Assistant</a></li>
+            <li><a href="learning.html"><i class='bx bxs-graduation'></i> Learning</a></li>
+            <li class="menu-divider"></li>
+            <li><a href="settings.html"><i class='bx bxs-cog'></i> Settings</a></li>
+            <li><a href="login.html"><i class='bx bx-log-out'></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="main-header">
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="user-info">
+                <span>Welcome, User Name</span>
+                <span class="user-id">ID: 12345</span>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <h1 class="page-title">Hospital Bed & Resource Availability</h1>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class='bx bxs-bed icon-blue'></i>
+                    <h4>General Beds</h4>
+                    <p>1,204 Available</p>
+                </div>
+                <div class="stat-card">
+                    <i class='bx bxs-clinic icon-orange'></i>
+                    <h4>ICU Beds</h4>
+                    <p>312 Available</p>
+                </div>
+                <div class="stat-card">
+                    <i class='bx bxs-lungs icon-red'></i>
+                    <h4>Oxygen Cylinders</h4>
+                    <p>890 Available</p>
+                </div>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search by Hospital or Pincode...">
+                <button class="btn-primary"><i class='bx bx-search'></i> Search</button>
+            </div>
+
+            <div class="content-card">
+                <h3>Nearby Hospitals (Live Data)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Hospital</th>
+                            <th>General Beds</th>
+                            <th>ICU Beds</th>
+                            <th>Oxygen</th>
+                            <th>Last Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>City General Hospital</td>
+                            <td><span class="status-done">120</span></td>
+                            <td><span class="status-done">35</span></td>
+                            <td><span class="status-done">Available</span></td>
+                            <td>2 min ago</td>
+                        </tr>
+                        <tr>
+                            <td>Apollo Hospital</td>
+                            <td><span class="status-medium">45</span></td>
+                            <td><span class="status-pending">5</span></td>
+                            <td><span class="status-done">Available</span></td>
+                            <td>5 min ago</td>
+                        </tr>
+                        <tr>
+                            <td>Max Healthcare</td>
+                            <td><span class="status-done">88</span></td>
+                            <td><span class="status-medium">12</span></td>
+                            <td><span class="status-pending">Limited</span></td>
+                            <td>10 min ago</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

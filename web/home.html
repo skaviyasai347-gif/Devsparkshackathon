@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureLink - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="home-page">
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>CURELINK 🩺</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="home.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+            <li><a href="disease.html"><i class='bx bx-plus-medical'></i> Disease</a></li>
+            <li><a href="vaccines.html"><i class='bx bxs-virus'></i> Vaccines</a></li>
+            <li><a href="upload.html"><i class='bx bx-upload'></i> Upload</a></li>
+            <li><a href="beds.html"><i class='bx bxs-bed'></i> Bed Availability</a></li>
+            <li><a href="assistant.html"><i class='bx bxs-bot'></i> Personal Assistant</a></li>
+            <li><a href="learning.html"><i class='bx bxs-graduation'></i> Learning</a></li>
+            <li class="menu-divider"></li>
+            <li><a href="settings.html"><i class='bx bxs-cog'></i> Settings</a></li>
+            <li><a href="login.html"><i class='bx bx-log-out'></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        
+        <header class="main-header">
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="user-info">
+                <span>Welcome, <span id="welcome-username">User Name</span></span>
+                <span class="user-id" id="welcome-userid">ID: 12345</span>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <h1 class="page-title">Dashboard</h1>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class='bx bx-check-shield icon-green'></i>
+                    <h4>Vaccine Status</h4>
+                    <p>Fully Vaccinated</p>
+                </div>
+                <div class="stat-card">
+                    <i class='bx bx-bell icon-red'></i>
+                    <h4>Pending Alerts</h4>
+                    <p>1 New Alert</p>
+                </div>
+                <div class="stat-card">
+                    <i class='bx bx-calendar-check icon-blue'></i>
+                    <h4>Next Appointment</h4>
+                    <p>Nov 20, 2025</p>
+                </div>
+            </div>
+
+            <div class="quote-card">
+                <p class="quote-text">"Health is a state of complete harmony of the body, mind, and spirit."</p>
+                <p class="quote-author">- B.K.S. Iyengar</p>
+            </div>
+        </div>
+    </main>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureLink - Disease Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="home-page">
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>CURELINK 🩺</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="home.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+            <li><a href="disease.html"><i class='bx bx-plus-medical'></i> Disease</a></li>
+            <li><a href="vaccines.html"><i class='bx bxs-virus'></i> Vaccines</a></li>
+            <li><a href="upload.html"><i class='bx bx-upload'></i> Upload</a></li>
+            <li><a href="beds.html"><i class='bx bxs-bed'></i> Bed Availability</a></li>
+            <li><a href="assistant.html"><i class='bx bxs-bot'></i> Personal Assistant</a></li>
+            <li><a href="learning.html"><i class='bx bxs-graduation'></i> Learning</a></li>
+            <li class="menu-divider"></li>
+            <li><a href="settings.html"><i class='bx bxs-cog'></i> Settings</a></li>
+            <li><a href="login.html"><i class='bx bx-log-out'></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="main-header">
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="user-info">
+                <span>Welcome, User Name</span>
+                <span class="user-id">ID: 12345</span>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <h1 class="page-title">Disease Information</h1>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a disease (e.g., Malaria, COVID-19)...">
+                <button class="btn-primary"><i class='bx bx-search'></i> Search</button>
+            </div>
+
+            <div class="content-card">
+                <h3>Common Diseases</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Disease</th>
+                            <th>Symptoms</th>
+                            <th>Prevention</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>COVID-19</td>
+                            <td>Fever, Cough, Fatigue</td>
+                            <td>Vaccination, Masks</td>
+                            <td><span class="status-high">High Alert</span></td>
+                        </tr>
+                        <tr>
+                            <td>Influenza (Flu)</td>
+                            <td>Fever, Body Aches, Sore Throat</td>
+                            <td>Annual Flu Shot</td>
+                            <td><span class="status-medium">Seasonal</span></td>
+                        </tr>
+                        <tr>
+                            <td>Malaria</td>
+                            <td>Fever, Chills, Sweats</td>
+                            <td>Mosquito Nets, Repellent</td>
+                            <td><span class="status-low">Regional</span></td>
+                        </tr>
+                        <tr>
+                            <td>Dengue</td>
+                            <td>High Fever, Headache, Joint Pain</td>
+                            <td>Avoid Stagnant Water</td>
+                            <td><span class="status-medium">Seasonal</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

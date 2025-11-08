@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureLink - Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="home-page">
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>CURELINK 🩺</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="home.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+            <li><a href="disease.html"><i class='bx bx-plus-medical'></i> Disease</a></li>
+            <li><a href="vaccines.html"><i class='bx bxs-virus'></i> Vaccines</a></li>
+            <li><a href="upload.html"><i class='bx bx-upload'></i> Upload</a></li>
+            <li><a href="beds.html"><i class='bx bxs-bed'></i> Bed Availability</a></li>
+            <li><a href="assistant.html"><i class='bx bxs-bot'></i> Personal Assistant</a></li>
+            <li><a href="learning.html"><i class='bx bxs-graduation'></i> Learning</a></li>
+            <li class="menu-divider"></li>
+            <li><a href="settings.html"><i class='bx bxs-cog'></i> Settings</a></li>
+            <li><a href="login.html"><i class='bx bx-log-out'></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="main-header">
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="user-info">
+                <span>Welcome, User Name</span>
+                <span class="user-id">ID: 12345</span>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <h1 class="page-title">Personal Health Assistant (AI)</h1>
+            
+            <div class="chat-container">
+                <div class="chat-messages">
+                    <div class="message bot-message">
+                        <i class='bx bxs-bot'></i>
+                        <p>Hello! I am your AI Health Assistant. Ask me about symptoms, diseases, or prevention methods in simple language.</p>
+                    </div>
+                    <div class="message user-message">
+                        <p>What are the first symptoms of dengue?</p>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="message bot-message">
+                        <i class='bx bxs-bot'></i>
+                        <p>Common first symptoms of dengue include high fever, severe headache, pain behind the eyes, and joint and muscle pain.</p>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" placeholder="Type your message...">
+                    <button class="btn-primary"><i class='bx bxs-send'></i></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
